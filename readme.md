@@ -1,4 +1,4 @@
-# [Landing Page - Bolshoi Theater.](https://BilliZane.github.io/landing_page_grand_theatre) #
+# [Landing Page - Grand Theater.](https://BilliZane.github.io/landing_page_grand_theatre) #
 
 The page is fully responsive for screens with a width of 350px and more.
 
