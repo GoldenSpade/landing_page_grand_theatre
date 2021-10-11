@@ -1,0 +1,257 @@
+.patron {
+  padding-bottom: 80px;
+
+  @media (max-width: calc(768px + 30px)) {
+    padding-bottom: 60px;
+  }
+
+  &__title {
+    @include sectionTitle;
+
+    & span {
+      color: $secondColor;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media (max-width: calc(1160px)) {
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  &__contacts {
+    font-family: "OpensansCondensedBold-700", sans-serif;
+    font-size: $patronMd;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    min-width: 155px;
+
+
+    @media(max-width: 1160px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      min-width: 100%;
+
+      @media (max-width: 440px) {
+        justify-content: center;
+        text-align: center;
+      }
+
+    }
+
+    &-col {
+      min-width: max-content;
+      padding-right: 30px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @media (max-width: 440px) {
+        min-width: 100%;
+        padding-right: 0;
+      }
+
+    }
+
+    &-item {
+      padding-bottom: 25px;
+
+      @media (max-width: 445px) {
+        padding-bottom: 10px;
+      }
+
+    }
+
+    &-link {
+      border-bottom: solid 2px transparent;
+
+      transition: border-bottom $tranDur, text-shadow $tranDur;
+
+      &:hover {
+        cursor: pointer;
+        border-bottom: solid 2px $secondColor;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+
+  }
+
+  &__form {
+    display: flex;
+    padding-bottom: 60px;
+
+    @media (max-width: calc(1160px)) {
+      width: 100%;
+    }
+
+    @media (max-width: calc(400px)) {
+      padding-bottom: 50px;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      max-width: 730px;
+
+      @media (max-width: calc(1160px)) {
+        max-width: 100%;
+      }
+    }
+
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+      padding-right: 25px;
+
+      &--1 {
+        flex: 0 1 30%;
+
+        @media (max-width: calc(576px + 30px)) {
+          flex: 0 1 50%;
+        }
+
+        @media (max-width: calc(400px)) {
+          flex: 0 1 100%;
+        }
+      }
+
+      &--2 {
+        flex: 0 1 30%;
+
+        @media (max-width: calc(576px + 30px)) {
+          flex: 0 1 50%;
+
+          padding-right: 0;
+          padding-left: 25px;
+        }
+
+        @media (max-width: calc(400px)) {
+          flex: 0 1 100%;
+        }
+      }
+
+      &--3 {
+        flex: 0 1 40%;
+
+        padding-right: 0;
+
+        @media (max-width: calc(576px + 30px)) {
+          flex: 0 1 100%;
+        }
+
+        @media (max-width: calc(400px)) {
+          flex: 0 1 100%;
+        }
+
+      }
+
+      @media (max-width: calc(400px)) {
+        padding: 0;
+      }
+    }
+
+    &-item {
+      height: 35px;
+      width: 100%;
+
+      background: $sixColor;
+      border: 1px solid $sixColor;
+      color: $fifthColor;
+
+      margin-bottom: 30px;
+
+      padding-left: 20px;
+
+      max-width: 300px;
+      min-height: 30px;
+
+      outline: none;
+
+      @media (max-width: 400px) {
+        max-width: 100%;
+      }
+
+      &:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 50px $sixColor;
+        -webkit-text-fill-color: $fifthColor;
+        color: $fifthColor;
+      }
+
+      &--text {
+        height: 100px;
+        margin-right: 0;
+        padding-top: 10px;
+
+        @media (max-width: calc(1160px)) {
+          min-width: 100%;
+        }
+
+        @media (max-width: calc(576px + 30px)) {
+          min-width: 100%;
+        }
+
+        resize: none;
+      }
+
+      &::placeholder {
+        color: $fifthColor;
+      }
+
+      &:active,
+      :focus {
+        color: none;
+      }
+
+    }
+
+    &-privacy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: calc(510px)) {
+        flex-direction: column;
+      }
+
+    }
+
+    &-privacy-text {
+      display: flex;
+
+      font-family: "OpensansCondensedBold-400", sans-serif;
+      font-size: $patronSm;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      color: $fifthColor;
+      text-align: left;
+
+      max-width: 70%;
+
+      padding-right: 40px;
+
+      @media (max-width: calc(510px)) {
+        max-width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+
+        padding-right: 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,28 @@
+@mixin sectionTitle {
+  font-family: "OpensansCondensedlLight-300", sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 65px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  text-align: center;
+
+  margin-top: 130px;
+  padding-bottom: 100px;
+
+  @media (max-width: calc(768px + 30px)) {
+    margin-top: 130px;
+  }
+
+  @media (max-width: calc(576px + 30px)) {
+    margin-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: calc(450px)) {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}

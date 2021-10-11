@@ -1,0 +1,135 @@
+.nav-mobile {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "OpensansCondensedBold-700", sans-serif;
+  font-size: $navMobFsz;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  background-color: $firstColor;
+  padding: 0;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  height: 100vh;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  transform: translateX(-100%);
+  transition: transform $tranDur;
+
+  &--show {
+    transform: translateX(0);
+  }
+
+  &__close {
+    background: url(../images/nav-mobile/close.svg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    right: 38px;
+    top: 38px;
+
+    transition: transform $tranDur;
+
+    &:hover {
+      transform: scale(1.1) rotate(90deg);
+      cursor: pointer;
+    }
+
+    &:focus {
+      transform: scale(1.1) rotate(90deg);
+      cursor: pointer;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+  }
+
+  &__item {
+    width: max-content;
+
+    &:nth-last-child(1) {
+      padding: 0;
+    }
+
+    &:nth-last-child(2) {
+      padding: 0;
+    }
+
+    padding-bottom: 30px;
+  }
+
+  &__link {
+    border-bottom: solid 2px transparent;
+
+    transition: border-bottom $tranDur, text-shadow $tranDur;
+
+    &:hover {
+      cursor: pointer;
+      border-bottom: solid 2px $secondColor;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__social {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-left: 40px;
+
+    width: 140px;
+    height: 126px;
+
+    margin-top: 90px;
+
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-img {
+      transition: transform $tranDur;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      &:focus {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      &--vk {
+        width: 55px;
+        height: 40px;
+        margin-left: 46px;
+      }
+
+      &--facebook {
+        margin-left: 8px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,93 @@
+.header {
+  background: url(../images/header-background.jpg);
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  &__content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+
+    min-height: calc(100vh - 118px);
+
+    @media (max-width: calc(4000px + 30px)) {
+      min-height: calc(100vh - 118px);
+    }
+
+    @media (max-width: calc(1185px + 30px)) {
+      min-height: calc(100vh - 188px);
+    }
+
+    @media (max-width: calc(992px + 30px)) {
+      padding-left: 10%;
+      min-height: calc(100vh - 192px);
+    }
+
+    @media (max-width: calc(768px + 30px)) {
+      padding-left: 8%;
+      min-height: calc(100vh - 124px);
+    }
+
+    @media (max-width: calc(576px + 30px)) {
+      padding-left: 0;
+    }
+
+    @media (max-width: 400px) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 0 1 70%;
+
+    max-width: 540px;
+
+    @media (max-width: calc(992px + 30px)) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__title {
+    font-family: "OpensansCondensedBold-700", sans-serif;
+    font-size: $headerFszL1;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @media (min-width: 1010px) and (max-width: 1080px) {
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: calc(576px + 30px)) {
+      letter-spacing: 0.05em;
+      font-size: $headerFszL2;
+    }
+
+    padding-bottom: 50px;
+  }
+
+  &__subtitle {
+    font-family: "OpensansCondensedBold-400", sans-serif;
+    font-size: $headerFszSm;
+    line-height: 21px;
+    letter-spacing: 0em;
+
+    padding-right: 15px;
+    padding-bottom: 50px;
+
+    @media (max-width: calc(992px + 30px)) {
+      padding-right: 0;
+    }
+  }
+
+}
