@@ -37,4 +37,4 @@ It's easy to set up and very fast.
 * Parcel-Bundler;
 * Visual Studio Code.
 
-[DEMO LINK](https://BilliZane.github.io/landing_page_grand_theatre)
+### [DEMO LINK](https://BilliZane.github.io/landing_page_grand_theatre) ###
