@@ -1,4 +1,4 @@
-# [Landing Page - Grand Theater.](https://BilliZane.github.io/landing_page_grand_theatre) #
+# [Landing Page - Grand Theater.](https://goldenspade.github.io/landing_page_grand_theatre) #
 
 The page is fully responsive for screens with a width of 350px and more.
 
@@ -37,4 +37,4 @@ It's easy to set up and very fast.
 * Parcel-Bundler;
 * Visual Studio Code.
 
-### [DEMO LINK](https://BilliZane.github.io/landing_page_grand_theatre) ###
+### [DEMO LINK](https://goldenspade.github.io/landing_page_grand_theatre) ###
